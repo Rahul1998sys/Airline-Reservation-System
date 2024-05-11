@@ -1,74 +1,29 @@
 # Airline-Reservation-System
-<?xml version="1.0" encoding="UTF-8"?>
-<!-- You may freely edit this file. See commented blocks below for -->
-<!-- some examples of how to customize the build. -->
-<!-- (If you delete it and reopen the project it will be recreated.) -->
-<!-- By default, only the Clean and Build commands use this build script. -->
-<!-- Commands such as Run, Debug, and Test only use this build script if -->
-<!-- the Compile on Save feature is turned off for the project. -->
-<!-- You can turn off the Compile on Save (or Deploy on Save) setting -->
-<!-- in the project's Project Properties dialog box.-->
-<project name="FinalAssignment_teamSUM" default="default" basedir=".">
-    <description>Builds, tests, and runs the project FinalAssignment_teamSUM.</description>
-    <import file="nbproject/build-impl.xml"/>
-    <!--
+When you build an Java application project that has a main class, the IDE
+automatically copies all of the JAR
+files on the projects classpath to your projects dist/lib folder. The IDE
+also adds each of the JAR files to the Class-Path element in the application
+JAR files manifest file (MANIFEST.MF).
 
-    There exist several targets which are by default empty and which can be 
-    used for execution of your tasks. These targets are usually executed 
-    before and after some main targets. They are: 
+To run the project from the command line, go to the dist folder and
+type the following:
 
-      -pre-init:                 called before initialization of project properties
-      -post-init:                called after initialization of project properties
-      -pre-compile:              called before javac compilation
-      -post-compile:             called after javac compilation
-      -pre-compile-single:       called before javac compilation of single file
-      -post-compile-single:      called after javac compilation of single file
-      -pre-compile-test:         called before javac compilation of JUnit tests
-      -post-compile-test:        called after javac compilation of JUnit tests
-      -pre-compile-test-single:  called before javac compilation of single JUnit test
-      -post-compile-test-single: called after javac compilation of single JUunit test
-      -pre-jar:                  called before JAR building
-      -post-jar:                 called after JAR building
-      -post-clean:               called after cleaning build products
+java -jar "FinalAssignment_teamSUM.jar" 
 
-    (Targets beginning with '-' are not intended to be called on their own.)
+To distribute this project, zip up the dist folder (including the lib folder)
+and distribute the ZIP file.
 
-    Example of inserting an obfuscator after compilation could look like this:
+Notes:
 
-        <target name="-post-compile">
-            <obfuscate>
-                <fileset dir="${build.classes.dir}"/>
-            </obfuscate>
-        </target>
-
-    For list of available properties check the imported 
-    nbproject/build-impl.xml file. 
-
-
-    Another way to customize the build is by overriding existing main targets.
-    The targets of interest are: 
-
-      -init-macrodef-javac:     defines macro for javac compilation
-      -init-macrodef-junit:     defines macro for junit execution
-      -init-macrodef-debug:     defines macro for class debugging
-      -init-macrodef-java:      defines macro for class execution
-      -do-jar:                  JAR building
-      run:                      execution of project 
-      -javadoc-build:           Javadoc generation
-      test-report:              JUnit report generation
-
-    An example of overriding the target for project execution could look like this:
-
-        <target name="run" depends="FinalAssignment_teamSUM-impl.jar">
-            <exec dir="bin" executable="launcher.exe">
-                <arg file="${dist.jar}"/>
-            </exec>
-        </target>
-
-    Notice that the overridden target depends on the jar target and not only on 
-    the compile target as the regular run target does. Again, for a list of available 
-    properties which you can use, check the target you are overriding in the
-    nbproject/build-impl.xml file. 
-
-    -->
-</project>
+* If two JAR files on the project classpath have the same name, only the first
+JAR file is copied to the lib folder.
+* Only JAR files are copied to the lib folder.
+If the classpath contains other types of files or folders, these files (folders)
+are not copied.
+* If a library on the projects classpath also has a Class-Path element
+specified in the manifest,the content of the Class-Path element has to be on
+the projects runtime path.
+* To set a main class in a standard Java project, right-click the project node
+in the Projects window and choose Properties. Then click Run and enter the
+class name in the Main Class field. Alternatively, you can manually type the
+class name in the manifest Main-Class element.
