@@ -1,3 +1,27 @@
+# ✈️ Airline Reservation System
+
+A **Java-based** airline reservation system that allows users to **book, cancel, and manage flight tickets** seamlessly. Built for efficiency and ease of use. 🛫  
+
+## 🚀 Features
+- ✅ **User Registration & Login**
+- ✅ **Book & Cancel Flights**
+- ✅ **Flight Search & Filtering**
+- ✅ **Seat Selection & Pricing**
+- ✅ **Admin Dashboard for Management**
+- ✅ **Database Integration for Real-time Updates**  
+
+## 🛠️ Tech Stack
+- **Programming Language:** Java ☕  
+- **GUI:** Swing / JavaFX 🖥️  
+- **Database:** MySQL / SQLite 💾  
+- **IDE Used:** NetBeans / IntelliJ / Eclipse  
+
+## 📌 How to Run?
+1. Clone this repository:  
+   ```bash
+   git clone https://github.com/Rahul1998sys/Airline-Reservation-System.git
+
+
 # Airline-Reservation-System
 When you build an Java application project that has a main class, the IDE
 automatically copies all of the JAR
@@ -27,3 +51,11 @@ the projects runtime path.
 in the Projects window and choose Properties. Then click Run and enter the
 class name in the Main Class field. Alternatively, you can manually type the
 class name in the manifest Main-Class element.
+
+
+
+🤝 Contributing
+Want to improve this game? Feel free to fork, star ⭐, and contribute!
+
+## 📬 Contact
+For any queries, reach out at: **rahulsaxena1698@gmail.com**
