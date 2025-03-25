@@ -53,9 +53,8 @@ class name in the Main Class field. Alternatively, you can manually type the
 class name in the manifest Main-Class element.
 
 
-
-🤝 Contributing
-Want to improve this game? Feel free to fork, star ⭐, and contribute!
+## 🤝 Contributing
+Want to improve this game? Feel free to **fork, star ⭐, and contribute!**
 
 ## 📬 Contact
 For any queries, reach out at: **rahulsaxena1698@gmail.com**
